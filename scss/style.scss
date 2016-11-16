@@ -1,0 +1,141 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans|Wallpoet|VT323|Calligraffitti:400,600,300,800);
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+body {
+  background-color: #0000FF;
+  color: #FFFEDF;
+  font-family: 'Open Sans', sans-serif;
+}
+.center {
+  text-shadow: 0px 1px 1px #191919;
+  cursor:default;
+  width:450px;
+  margin:auto;
+  display:block;
+  position:relative;
+  .title {
+    padding-top:10px;
+    width:100%;
+    font-weight:600;
+    text-align: center;
+    font-size:60px;
+    font-family: calligraffitti;
+    font-style: italic;
+    padding-bottom:15px;
+  }
+  .settings {
+    width:350px;
+    padding-bottom:15px;
+    display:table;
+    margin:auto;
+    position:relative;
+    text-align:center;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    .description {
+      font-size:15px;
+    }
+    .value {
+      color: #ff0000;
+      font-size:30px;
+      font-family: wallpoet;
+    }
+    .session {
+      width: 108px;
+      float:right;
+      .description{
+        color: #2ecc71;
+      }
+    }
+    .break {
+      width: 100px;
+      float:left;
+      .description{
+        color: #2ecc71;
+      }
+    }
+    .control {
+      font-size:33px;
+      cursor:pointer;
+      &:hover {
+        color:#95a5a6;
+      }
+    }
+  }
+  .next-pomodoro {
+    margin-left:30px;
+    float:left;
+    cursor:pointer;
+    font-family: calligraffitti;
+    font-size: 30px;
+  }
+  .reset-pomodoro {
+    margin-right:30px;
+    float:right;
+    cursor:pointer;
+    font-family: calligraffitti;
+    font-size: 30px;
+  }
+  .pomodoro {
+    cursor:pointer;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    clear:both;
+    border-radius:50%;
+    border:10px;
+    border-style: solid double;
+    position:relative;
+    overflow:hidden;
+    text-shadow:none;
+    .fill {
+      width: 100%;
+      height: 0%;
+      position:absolute;
+      left:0;
+      &.session {
+        bottom:0;
+        z-index:2;
+        background-color:#2ecc71;
+      }
+      &.break {
+        top:0;
+        z-index:3;
+        background-color:#2ecc71;
+      }
+    }
+    
+    .time-left {
+      color: #ff0000;
+      top:32%;
+      left:50%;
+      margin-left:-125px;
+      width:250px;
+      text-align:center;
+      font-size:60px;
+      font-family: wallpoet;
+      z-index:4;
+      position:absolute;
+    }
+    .status{
+      bottom:35%;
+      left:50%;
+      margin-left:-125px;
+      width:250px;
+      text-align:center;
+      font-size:15px;
+      z-index:4;
+      position:absolute;
+    }
+  }
+}

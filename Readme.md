@@ -1,0 +1,2 @@
+This program was created as a project for the FreeCodeCamp.com Front=End-Development Course, using Codepen.io and written in HTML, CSS, JS, and SASS. 
+the program can be found at: <a href="http://www.ggetchell.com/a-pomodoro-clock/index.html">Pomodoro Countdown Timer</a>.
